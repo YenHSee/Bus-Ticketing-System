@@ -1,0 +1,93 @@
+create table staff(
+staffID varchar(10) Primary key,
+staffName varchar(30),
+phoneNumber varchar(12)not null,
+emailAdress varchar(100),
+staffPosition varchar(20),
+password varchar(50),
+address varchar(100),
+securityQuestion varchar(100),
+securityAnswer varchar(100),
+gender char(20),
+age integer,
+icNumber char(14),
+dateOfBirth varchar(30),
+homeContactNumber varchar(10)
+);
+
+create table customer(
+customerID varchar(10) primary key,
+staffID varchar(10),
+customerName varchar(30),
+contactNumber varchar(12)not null,
+emailAdress varchar(20),
+password varchar(50),
+address varchar(100),
+securityQuestion varchar(100),
+securityAnswer varchar(100),
+gender char(20),
+age integer,
+icNumber char(14),
+dateOfBirth varchar(30),
+homeContactNumber varchar(10),
+foreign key(staffID)references staff(staffID)
+);
+
+create table bus(
+busNumber varchar(10) primary key,
+busEngine varchar(20),
+totalBusSeat integer,
+busType varchar(30),
+busColor char(10)
+);
+
+create table schedule(
+scheduleID varchar(10)primary key,
+staffID VARchar(10),
+busNumber varchar(10),
+departureTime varchar(10),
+departureDate varchar(30),
+departurePoint varchar(20),
+destinationPoint varchar (20),
+isChange integer,
+foreign key (staffID) references staff(staffID),
+foreign key (busNumber) references bus(busNumber)
+);
+
+create table ticket(
+ticketNo integer primary key,
+scheduleID VARchar(10),
+ticketPrice float(8),
+seatStatus char(5),
+seatNumber integer,
+foreign key(scheduleID) references schedule(scheduleID)
+);
+
+create table purchase(
+purchaseID varchar(10)primary key,
+customerID varchar(10), 
+totalTicketPrice float(8),
+foreign key (customerID) references customer(customerID)
+); 
+
+create table purchaseTicket(
+purchaseID varchar(10),
+ticketno integer,
+PRIMARY KEY(PURCHASEid, TICKETNO),
+foreign key (purchaseID) references purchase(purchASEid),
+FOREIGN KEY(TICKETNO) REFERENCES TICKET(TICKETNO)
+);
+
+create table payment(
+paymentID varchar(10) primary key,
+purchaseID varchar(10),
+paymentType varchar(10),
+paymentDate varchar(30),
+paymentTime varchar(10),
+cardNumber varchar(20),
+cardType varchar(20),
+cardHolderName varchar(30),
+cardExpiredDate varchar(30),
+cardValidateCode varchar(10),
+foreign key(purchaseID) references purchase(purchaseID)
+); 
