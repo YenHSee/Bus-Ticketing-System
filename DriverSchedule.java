@@ -63,7 +63,6 @@ public class SelectionPage extends javax.swing.JFrame {
     private int ticketNumber;
     private String ticketNo;
     
-
     /**
      * Creates new form SelectionPage
      */
@@ -99,6 +98,7 @@ public class SelectionPage extends javax.swing.JFrame {
         int i2 = Integer.parseInt(s.replace("M","0")) + 1;
         jtfScheduleID.setText("M" + String.valueOf(i2));
         jtfScheduleID.setEditable(false);
+	    
    
         }
     
