@@ -63,6 +63,7 @@ public class SelectionPage extends javax.swing.JFrame {
     private int ticketNumber;
     private String ticketNo;
     
+	
     /**
      * Creates new form SelectionPage
      */
