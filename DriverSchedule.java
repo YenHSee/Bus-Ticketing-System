@@ -5,7 +5,6 @@
  */
 package ui;
 
-
 import control.MaintainBus;
 import control.MaintainCustomer;
 import control.MaintainSchedule;
