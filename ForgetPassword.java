@@ -32,7 +32,7 @@ public class ForgetPassword extends javax.swing.JFrame {
         jtfAnswer.setEnabled(false);
         jbtSubmit.setEnabled(false);
     }
-
+//
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
