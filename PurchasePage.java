@@ -20,6 +20,7 @@ import javax.swing.JOptionPane;
  * @author Eric
  */;
 //
+
 public class PurchasePage extends javax.swing.JFrame {
    private int j1=1;
    private int j2=1;
