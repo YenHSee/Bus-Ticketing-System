@@ -30,6 +30,7 @@ import net.sf.jasperreports.view.JasperViewer;
  *
  * @author Eric
  */
+
 public class PaymentPage extends javax.swing.JFrame {
     private MaintainPurchase purchaseControl;
    private String host = "jdbc:derby://localhost:1527/FinalYearProject";
