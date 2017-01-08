@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ui;
-
+//
 import javax.swing.ImageIcon;
 import control.*;
 import domain.*;
