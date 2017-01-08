@@ -33,6 +33,7 @@ homeContactNumber varchar(10),
 foreign key(staffID)references staff(staffID)
 );
 
+
 create table bus(
 busNumber varchar(10) primary key,
 busEngine varchar(20),
