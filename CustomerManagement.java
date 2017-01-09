@@ -4666,7 +4666,7 @@ public class SelectionPage extends javax.swing.JFrame {
 
             staffControl.updateRecord(s);
             JOptionPane.showMessageDialog(null, "This Staff information updated");
-            clearText();
+            clearText();123
         }
         else
         {
@@ -4976,7 +4976,8 @@ public class SelectionPage extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "This Customer ID not exists.","Record Not Found ",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jbtRead11ActionPerformed
-
+	
+	// Retrieve the customer details
     private void jcbUpdate14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbUpdate14ActionPerformed
         
         String customerID = (String)jComboBox2.getSelectedItem();
