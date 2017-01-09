@@ -117,8 +117,8 @@ public class SelectionPage extends javax.swing.JFrame {
         jtfUserID.setEditable(false);
         jtfStaffID18.setText(UserID);
         jtfStaffID18.setEditable(false);
-        //jtfStaffID17.setText(UserID);
-        //jtfStaffID17.setEditable(false);
+        jtfStaffID17.setText(UserID);
+        jtfStaffID17.setEditable(false);
     }
 
     /**
